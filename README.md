@@ -1,5 +1,6 @@
 # README
 lijiale
+[![Maintainability](https://api.codeclimate.com/v1/badges/d78ab85a8028c8fda985/maintainability)](https://codeclimate.com/github/ljl19971006/backend/maintainability)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
