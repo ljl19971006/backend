@@ -8,6 +8,8 @@ deploy:
   provider: heroku
   api_key:
     secure: Stdnx8YZpWuxYsqCzAMKi5PK4FsuHAZiraie2ogCMy52EQfMp9VPv/LuCCUS//91x04n20uFh6hIDE8prQI/u/sHWnkfEAKeT6e0Iini/C4bmR3XIZfidM1bwakEF+FQ20ViuM/D5oDMGwohZnCUv+uAvAZhGfly4g3dsHYhKWnZ6IKtMabbp/pHTGlvPvLsem0axtq/7TcA9I9k/RLNUuOUnz36lgmNxPBYcH+KkqT/cC4bVOKNXzzet5bhBmZJQYuFmPQ8+8fU9YWo0pOBqngDMI0Q0yKcqbKf1YRMrjd7ePo7b8dk4a8rFlIy02S9JWkE7gy+pxrj5WXXW+7/tKO6DqB8oS9Ved6jZDFXZQ+V0hmbtqVNv2aJMI4zRq4mHkI2XEDK69lsTEmOlvi5D2yQvMOX/2pc4mjqHmtUWwpXnBSmkHnFZWEcb9x37P64R2lOS15cDSc1G1fAlm5hQ9RKDlYP+11HL+JQgujVZskXhJGYvhz9RvBVv8jA8tJ8yDtOU8N2x54rR6UpCHlOhCfWGpP53U/pnj8i4mKKSCAqehq6YIoQ9DLH63T9Yyf54yZdNe986GhJf+6+4IvdIG7NiKc4BpFlnN9hbCESHNCzUhmfNdXb7mr8EjPC79aJEbzgbdVHQlg1V+rWqkbr8ClE2qAmcNTsnlq9Ls4WnJM=
+
+app: backend
 before_script:
 - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
   > ./cc-test-reporter
