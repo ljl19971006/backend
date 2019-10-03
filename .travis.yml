@@ -14,11 +14,3 @@ script:
 - bundle exec rake
 after_script:
 - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
-deploy:
-  provider: heroku
-  api_key:
-    secure: ZSXJogH32hnXciLFF81ti79Ypb+jZ6CEY5z96XHsTZdTfU4mMOkIwLlqLxsyMlbyo7O+rgrpOp+SaCIwfq3q7Gy1cOtdVqP9Pbkj/IiWhTbMzScKms8yYlkNnWrBKR0/0WGQjMe7AMteR3kp1KAKWkOZmsuKtKJh/DevmNhYKqwc1liI9x9UZk4NNlvoMKzdd5vOhW9jbPqHtx6u559e1dj5QZ8uCiHBaonS+9bTjEBHRy/JEIGUntYzTYQYFQe/69kvp9mAV6w3QOXKAWx5e6VQZuhxYjJD1crRvEubnq0cqBhlih0dONj8HrPSHSHR2Ku3arg2Q3W3PDeslhyeWsOPEzZHOc+wqe1pNEqFKh1Q1AsF2mSHefi+6TjTaYZkcW/xQOXOuhm37YEUYJkz1mYdOlm1bBdq0ubX2cKe8UBCgNZ8mSM8q8Z4egOakDiDtwXZV5gR7g/d9TNbtARHV89N9Juqq27Q+l183hKD1zL67tnt7zCeQTvFNhDop3NSmxkG8yP0zGM07ErIyn7U56qeWlZOFG0xHs7+vNZIhiKq0Dz7S1Ozil3l5B2xfjkH3yM5Wd4wXlxkekQ+rcbVwyGaawVWIAhb6rPXwm6g+JTHtBZTF8cWglP8fL+gDM6Lr+XGrh7Q9PHRox6seX91gRQys1DlpCA3ys/PpymBYP4=
-app: lijiale
-run:
-- bundle install --without development test
-- bundle exec rails db:migrate
