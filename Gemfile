@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.3'
 #gem 'sqlite3', '~>1.3.6'
 
 group :development, :test do # <<<< :development, not devlopment
-  gem 'sqlite3'
+  gem 'sqlite3'， '~> 1.3.6'
 end
 gem 'pg', '~> 1.1', '>= 1.1.4', group: :production
 # Use Puma as the app server
