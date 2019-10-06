@@ -1,6 +1,6 @@
 class CountersController < ApplicationController
   before_action :set_counter, only: [:show, :edit, :update, :destroy]
-
+  skip_before_action  :verify_authenticity_token, :only => [:update]
   # GET /counters
   # GET /counters.json
   def index
@@ -41,7 +41,8 @@ class CountersController < ApplicationController
   # PATCH/PUT /counters/1.json
   def update
     respond_to do |format|
-      if @counter.update(counter_params)
+      @counter.increment!
+      if @counter.save()
         format.html { redirect_to @counter, notice: 'Counter was successfully updated.' }
         format.json { render :show, status: :ok, location: @counter }
       else
